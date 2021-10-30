@@ -24,8 +24,6 @@
 #' sampWiener <- Sparsify(sampWiener, pts, 10)
 #' res <- FPCA(sampWiener$Ly, sampWiener$Lt, 
 #'             list(dataType='Sparse', error=FALSE, kernel='epan', verbose=TRUE))
-#' CreateCovPlot(res) ##plotting the covariance surface
-#' CreateCovPlot(res, corr = TRUE) ##plotting the correlation surface
 #' @export
 
 CreateCovPlot = function(fpcaObj, covPlotType = 'Fitted', corr= FALSE, isInteractive = FALSE, colSpectrum = NULL, ...){
